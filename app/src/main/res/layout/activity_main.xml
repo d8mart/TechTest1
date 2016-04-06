@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/contenedor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mesa"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/mesamadera">
+
+     <LinearLayout
+       android:id="@+id/top"
+       android:layout_width="155dp"
+       android:layout_height="100dp">
+       <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cupcake1"/>
+     </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top2"
+            android:layout_width="155dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/olla"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/organizar"
+            android:background="@drawable/mesa_organizar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mesa">
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/item1"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom|start"
+            tools:ignore="NotSibling">
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item2"
+                android:layout_width="155dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top|start"
+                android:layout_below="@id/item1"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item3"
+                android:layout_toRightOf="@id/item1"
+                android:layout_width="155dp"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item4"
+                android:layout_toRightOf="@id/item2"
+                android:layout_below="@id/item3"
+                android:layout_width="155dp"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item5"
+                android:layout_toRightOf="@id/item3"
+                android:layout_width="155dp"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item6"
+                android:layout_below="@id/item5"
+                android:layout_toRightOf="@id/item4"
+                android:layout_width="155dp"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/item7"
+                android:layout_toRightOf="@id/item5"
+                android:layout_width="155dp"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                tools:ignore="NotSibling">
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
